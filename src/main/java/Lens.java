@@ -1,5 +1,3 @@
-
-
 public class Lens {
     private Integer minFocalLength;
     private Integer maxFocalLength;

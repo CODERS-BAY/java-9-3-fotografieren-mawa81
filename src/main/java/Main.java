@@ -1,5 +1,3 @@
-
-
 public class Main {
 
     public static void main(String[] args) {
@@ -15,9 +13,11 @@ public class Main {
         System.out.println(Camera.countCameras);
 
         Camera cam02 = new Camera("Canon", 17.0, 4.7, true, lens02);
+        Camera cam03 = new Camera();
 
         System.out.println(cam01.toString());
         System.out.println(cam02.toString());
+        System.out.println(cam03);
 
         cam02.setCameraLens(lens03);
 

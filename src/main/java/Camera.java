@@ -1,5 +1,3 @@
-
-
 public class Camera {
     private String brand;
     private Double megaPixels;
@@ -69,11 +67,11 @@ public class Camera {
     @Override
     public String toString() {
         return "Camera{" +
-                "brand='" + brand + '\'' +
-                ", megaPixels=" + megaPixels +
-                ", displaySize=" + displaySize +
-                ", colored=" + colored +
-                ", cameraLens=" + cameraLens +
+                "brand='" + getBrand() + '\'' +
+                ", megaPixels=" + getMegaPixels() +
+                ", displaySize=" + getDisplaySize() +
+                ", colored=" + getColored() +
+                ", cameraLens=" + getCameraLens() +
                 '}';
     }
 }
