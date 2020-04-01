@@ -6,6 +6,7 @@ public class Camera {
     private Double displaySize;
     private Boolean colored;
     private Lens cameraLens;
+    public static int countCameras;
 
     public Camera(String brand, Double megaPixels, Double displaySize, Boolean colored, Lens cameraLens) {
         setBrand(brand);
@@ -13,6 +14,7 @@ public class Camera {
         setDisplaySize(displaySize);
         setColored(colored);
         setCameraLens(cameraLens);
+        countCameras++;
     }
 
     public Camera() {
@@ -21,13 +23,14 @@ public class Camera {
         this.displaySize = null;
         this.colored = null;
         this.cameraLens = null;
+        countCameras++;
     }
 
     public String getBrand() {
         return brand;
     }
 
-    public void setBrand(String brand) {
+    private void setBrand(String brand) {
         this.brand = brand;
     }
 
@@ -35,7 +38,7 @@ public class Camera {
         return megaPixels;
     }
 
-    public void setMegaPixels(Double megaPixels) {
+    private void setMegaPixels(Double megaPixels) {
         this.megaPixels = megaPixels;
     }
 
@@ -43,7 +46,7 @@ public class Camera {
         return displaySize;
     }
 
-    public void setDisplaySize(Double displaySize) {
+    private void setDisplaySize(Double displaySize) {
         this.displaySize = displaySize;
     }
 
@@ -51,7 +54,7 @@ public class Camera {
         return colored;
     }
 
-    public void setColored(Boolean colored) {
+    private void setColored(Boolean colored) {
         this.colored = colored;
     }
 
